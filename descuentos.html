@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Porcentaje y descuentos</title>
 </head>
 <body>
@@ -11,9 +12,30 @@
         <h1>
             Porcentajes y descuentos
         </h1>
-    </header>
+    </header> 
+
     <section>
-        
+        <form action="">
+            <label for="InputPrice">
+                Introduzca el precio del producto
+            </label>
+            <input type="number" id="InputPrice">
+
+            <label for="InputDiscount">
+                Introduzca el descuento
+            </label>
+            <input type="number" id="InputDiscount">
+
+            <label for="InputCupon">
+                Introduzca el cupon si cuenta con uno
+            </label>
+            <input type="text" id="InputCupon">
+
+            <button type="button" onclick="calcularDescuentoButton()">
+                Calcular
+            </button>
+            <p id="ResultP"></p>
+        </form>
     </section>
 
     <script src="./descuentos.js"></script>
